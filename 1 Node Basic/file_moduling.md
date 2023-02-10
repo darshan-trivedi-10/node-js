@@ -5,7 +5,7 @@
 • A CommonJS module can be created by using the module.exports object. You can add properties and functions to this object, which will be exposed as the public interface of the module.
 
 Here's an example of a CommonJS module:
-```
+```js
 // math.js
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
 To use this module in another file, you can use the `require` function. The following code demonstrates how to use the `math` module from the previous example:
 
 
-``` 
+```js
 // index.js
 
 const math = require('./math');
@@ -38,7 +38,7 @@ An ES6 module can be created using the `export` keyword. You can use export to `
 
 Here's an example of an ES6 module:
 
-```
+```js
 // math.js
 
 export function add(a, b) {
@@ -54,7 +54,7 @@ To use this module in another file, you can use the `import` keyword.
 
 The following code demonstrates how to use the `math` module from the previous example:
 
-```
+```js
 // index.js
 
 import { add, subtract } from './math';
@@ -69,7 +69,7 @@ In the `package.json` file for an `ES6 module`, you can specify the module forma
 
 Here's an example of a `package.json` file that uses ECMAScript 6 modules:
 
-```
+```json
 {
   "name": "my-package",
   "version": "1.0.0",
